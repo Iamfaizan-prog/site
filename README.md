@@ -44,20 +44,4 @@ assets/
 
 **Quick jump.** `Ctrl K` / `Cmd K` opens the page search. It is an enhancement: the normal navigation works without JavaScript.
 
-## Before publishing
 
-- The run numbers (1,284 rows, 1.56s, 5 leads, 1.84s) are sample data. They are labelled as samples on the case pages. Replace them with real runs when you have them, or leave the labels in place.
-- The service descriptions, process steps and FAQ answers are drafts written from the existing stack. Read them once and adjust anything that does not match how you actually work.
-- The case studies describe DataPilot-lite and LeadFlow-lite from the original site. Confirm the implementation details (review rows, retries, draft replies) before publishing, since they go beyond the original one-line descriptions.
-
-## Deploy
-
-Any static host works:
-
-- **GitHub Pages:** push the folder, enable Pages on the branch root.
-- **Netlify / Vercel:** drag the folder in, no build command, publish directory `/`.
-- **Your own server:** copy the files; no runtime needed.
-
-## Credit
-
-Redesign process: [unslop](https://x.com/heydamir) by Damir Sokolovsky, licensed CC BY 4.0.
