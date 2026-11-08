@@ -2,7 +2,6 @@
 
 A static, multi-page portfolio for Python data pipelines, workflow automation and FastAPI backends. No build step, no framework. Open `index.html` in a browser or drop the folder on any static host.
 
-The original single-page file (`gemini-code-1794161976557.html`) is kept untouched for reference.
 
 ## Pages
 
