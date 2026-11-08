@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizan · Python & Automation Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            lime: '#10b981', /* Emerald accent for developer precision */
+                            darkBg: '#09090b',
+                            cardBg: '#121214',
+                            lightBg: '#f8fafc',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Space Grotesk"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Space Grotesk', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .bg-grid {
+            background-image: radial-gradient(circle, currentColor 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.04;
+        }
+        .card-glow:hover {
+            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-brand-lightBg text-slate-900 dark:bg-brand-darkBg dark:text-slate-100 transition-colors duration-300 antialiased selection:bg-emerald-500 selection:text-zinc-950">
+
+    <!-- Dotted background grid -->
+    <div class="fixed inset-0 bg-grid text-slate-400 dark:text-neutral-500 pointer-events-none z-0"></div>
+
+    <!-- Header / Nav -->
+    <header class="relative z-20 max-w-5xl mx-auto px-6 py-6 flex justify-between items-center border-b border-slate-200 dark:border-neutral-800/80">
+        <div class="flex items-center gap-3">
+            <span class="mono text-xs px-2.5 py-1 rounded bg-emerald-950/50 border border-emerald-800/60 text-emerald-400">&gt; whoami</span>
+            <span class="font-bold tracking-tight text-lg">Faizan</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <nav class="hidden sm:flex items-center gap-6 text-sm text-slate-500 dark:text-neutral-400 font-medium">
+                <a href="#projects" class="hover:text-emerald-400 transition">Projects</a>
+                <a href="#stack" class="hover:text-emerald-400 transition">Tech Stack</a>
+                <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
+            </nav>
+            <!-- Theme Toggle -->
+            <button onclick="toggleTheme()" class="p-2 rounded-full border border-slate-300 dark:border-neutral-800 hover:bg-slate-200 dark:hover:bg-neutral-800 transition" aria-label="Toggle Theme">
+                <svg id="theme-icon-light" class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                <svg id="theme-icon-dark" class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="relative z-10 max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Hero Section -->
+        <section class="space-y-6 pt-6">
+            <div class="inline-flex items-center space-x-2 bg-emerald-950/40 border border-emerald-800/60 px-3 py-1.5 rounded-full text-xs text-emerald-400 font-mono">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Available for freelance engineering contracts & automation solutions</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl font-bold tracking-tight leading-[1.1]">
+                I build robust Python data pipelines, automated workflows, and backend solutions[cite: 1].
+            </h1>
+            
+            <p class="text-slate-600 dark:text-neutral-400 text-lg max-w-2xl leading-relaxed">
+                Specializing in custom Python data pipelines, automated workflow engineering, and backend system integration. Focused on engineering high-performance scripts to eliminate operational friction and manual bottlenecks for businesses[cite: 1].
+            </p>
+
+            <div class="pt-4 flex flex-wrap gap-4">
+                <a href="mailto:faizanlinuxx@gmail.com" class="bg-emerald-500 text-zinc-950 font-semibold px-6 py-3 rounded-full hover:bg-emerald-400 transition shadow-lg shadow-emerald-950/50">
+                    Get in Touch
+                </a>
+                <a href="#projects" class="border border-slate-300 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 px-6 py-3 rounded-full hover:bg-slate-100 dark:hover:bg-neutral-800 transition text-slate-700 dark:text-zinc-300 font-medium">
+                    View Solutions ↓
+                </a>
+            </div>
+        </section>
+
+        <!-- Metrics Grid -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-white dark:bg-brand-cardBg border border-slate-200 dark:border-neutral-800">
+            <div>
+                <div class="text-3xl font-bold font-mono text-emerald-400">100%</div>
+                <div class="text-xs text-slate-500 dark:text-neutral-500 mt-1">Automated Pipeline Execution</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold font-mono text-emerald-400">Zero</div>
+                <div class="text-xs text-slate-500 dark:text-neutral-500 mt-1">Manual Data Entry Required</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold font-mono text-emerald-400">FastAPI</div>
+                <div class="text-xs text-slate-500 dark:text-neutral-500 mt-1">High-Speed API Backends</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold font-mono text-emerald-400">n8n</div>
+                <div class="text-xs text-slate-500 dark:text-neutral-500 mt-1">Advanced Workflow Orchestration</div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section id="stack" class="space-y-4">
+            <h3 class="text-xs uppercase tracking-widest text-slate-500 dark:text-neutral-500 font-mono font-bold">Core Engineering Stack[cite: 1]</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 px-3.5 py-1.5 rounded-full text-xs font-mono text-slate-700 dark:text-zinc-300">Python</span>
+                <span class="bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 px-3.5 py-1.5 rounded-full text-xs font-mono text-slate-700 dark:text-zinc-300">Pandas / Openpyxl[cite: 1]</span>
+                <span class="bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 px-3.5 py-1.5 rounded-full text-xs font-mono text-slate-700 dark:text-zinc-300">FastAPI[cite: 1]</span>
+                <span class="bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 px-3.5 py-1.5 rounded-full text-xs font-mono text-slate-700 dark:text-zinc-300">n8n & Webhooks[cite: 1]</span>
+                <span class="bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 px-3.5 py-1.5 rounded-full text-xs font-mono text-slate-700 dark:text-zinc-300">Gemini API[cite: 1]</span>
+                <span class="bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 px-3.5 py-1.5 rounded-full text-xs font-mono text-slate-700 dark:text-zinc-300">Docker & CI/CD[cite: 1]</span>
+                <span class="bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 px-3.5 py-1.5 rounded-full text-xs font-mono text-slate-700 dark:text-zinc-300">Pytest[cite: 1]</span>
+                <span class="bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 px-3.5 py-1.5 rounded-full text-xs font-mono text-slate-700 dark:text-zinc-300">Google Sheets API[cite: 1]</span>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="space-y-8">
+            <div class="border-b border-slate-200 dark:border-neutral-800 pb-4">
+                <h3 class="text-xl font-bold tracking-tight">&gt; demonstrated_solutions</h3>
+                <p class="text-sm text-slate-500 dark:text-neutral-400 mt-1">Production-grade automation tools engineered for data efficiency and lead management[cite: 1].</p>
+            </div>
+
+            <!-- Project 1: DataPilot-lite -->
+            <div class="bg-white dark:bg-brand-cardBg border border-slate-200 dark:border-neutral-800 rounded-2xl p-6 sm:p-8 space-y-6 card-glow transition-all">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div>
+                        <span class="text-xs mono text-emerald-400">01 / Data Pipeline Automation</span>
+                        <h4 class="text-xl font-bold mt-1">DataPilot-lite</h4>
+                    </div>
+                    <div class="flex items-center gap-3 text-sm">
+                        <a href="https://github.com/faizanlinuxx/datapilot-lite" target="_blank" class="text-emerald-400 hover:underline font-mono text-xs border border-emerald-500/30 px-3 py-1.5 rounded-full bg-emerald-950/20">GitHub Repository →</a>
+                    </div>
+                </div>
+                
+                <p class="text-slate-600 dark:text-neutral-400 text-sm sm:text-base leading-relaxed">
+                    Custom Python data cleaning script and automated Excel report generator using pandas and openpyxl[cite: 1]. Takes messy, unformatted input files with duplicates and bad dates, cleans them, and outputs a formatted report with PDF summaries[cite: 1].
+                </p>
+
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="text-xs mono bg-slate-100 dark:bg-neutral-900 px-2.5 py-1 rounded text-slate-600 dark:text-neutral-400">Python</span>
+                    <span class="text-xs mono bg-slate-100 dark:bg-neutral-900 px-2.5 py-1 rounded text-slate-600 dark:text-neutral-400">pandas</span>
+                    <span class="text-xs mono bg-slate-100 dark:bg-neutral-900 px-2.5 py-1 rounded text-slate-600 dark:text-neutral-400">openpyxl</span>
+                    <span class="text-xs mono bg-slate-100 dark:bg-neutral-900 px-2.5 py-1 rounded text-slate-600 dark:text-neutral-400">Streamlit</span>
+                </div>
+
+                <!-- Loom Video Embed Placeholder -->
+                <div class="aspect-video w-full bg-slate-100 dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 rounded-xl flex items-center justify-center relative overflow-hidden">
+                    <div class="text-center p-4 text-xs text-slate-500 dark:text-neutral-500 mono">
+                        [ Loom Video Demonstration: DataPilot-lite Workflow ]<br>
+                        <span class="text-[10px] text-slate-400 dark:text-neutral-600">Embed your iframe code here</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: LeadFlow-lite -->
+            <div class="bg-white dark:bg-brand-cardBg border border-slate-200 dark:border-neutral-800 rounded-2xl p-6 sm:p-8 space-y-6 card-glow transition-all">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div>
+                        <span class="text-xs mono text-emerald-400">02 / Workflow Automation & AI</span>
+                        <h4 class="text-xl font-bold mt-1">LeadFlow-lite</h4>
+                    </div>
+                    <div class="flex items-center gap-3 text-sm">
+                        <a href="https://github.com/faizanlinuxx/leadflow-lite" target="_blank" class="text-emerald-400 hover:underline font-mono text-xs border border-emerald-500/30 px-3 py-1.5 rounded-full bg-emerald-950/20">GitHub Repository →</a>
+                    </div>
+                </div>
+                
+                <p class="text-slate-600 dark:text-neutral-400 text-sm sm:text-base leading-relaxed">
+                    Automated workflow engine built to handle lead intake, validation, deduplication, and AI-powered classification[cite: 1]. Automatically categorizes incoming leads (hot/warm/cold) and drafts custom follow-up responses[cite: 1].
+                </p>
+
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="text-xs mono bg-slate-100 dark:bg-neutral-900 px-2.5 py-1 rounded text-slate-600 dark:text-neutral-400">n8n</span>
+                    <span class="text-xs mono bg-slate-100 dark:bg-neutral-900 px-2.5 py-1 rounded text-slate-600 dark:text-neutral-400">Python</span>
+                    <span class="text-xs mono bg-slate-100 dark:bg-neutral-900 px-2.5 py-1 rounded text-slate-600 dark:text-neutral-400">FastAPI</span>
+                    <span class="text-xs mono bg-slate-100 dark:bg-neutral-900 px-2.5 py-1 rounded text-slate-600 dark:text-neutral-400">Google Sheets API</span>
+                    <span class="text-xs mono bg-slate-100 dark:bg-neutral-900 px-2.5 py-1 rounded text-slate-600 dark:text-neutral-400">Gemini API</span>
+                </div>
+
+                <!-- Loom Video Embed Placeholder -->
+                <div class="aspect-video w-full bg-slate-100 dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 rounded-xl flex items-center justify-center relative overflow-hidden">
+                    <div class="text-center p-4 text-xs text-slate-500 dark:text-neutral-500 mono">
+                        [ Loom Video Demonstration: LeadFlow-lite Pipeline ]<br>
+                        <span class="text-[10px] text-slate-400 dark:text-neutral-600">Embed your iframe code here</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section id="contact" class="border border-slate-200 dark:border-neutral-800 rounded-3xl p-8 sm:p-12 text-center space-y-6 bg-white dark:bg-brand-cardBg">
+            <h3 class="text-2xl sm:text-3xl font-bold tracking-tight">Ready to eliminate your manual bottlenecks?</h3>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-neutral-400 max-w-lg mx-auto leading-relaxed">
+                Get in touch to discuss technical scope, pipeline architecture, and custom automation deliverables for your business[cite: 1].
+            </p>
+            <div class="pt-2">
+                <a href="mailto:faizanlinuxx@gmail.com" class="inline-block bg-slate-900 dark:bg-white text-white dark:text-zinc-950 px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-emerald-600 dark:hover:bg-emerald-400 transition shadow-md">
+                    faizanlinuxx@gmail.com
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 max-w-5xl mx-auto px-6 py-8 border-t border-slate-200 dark:border-neutral-900 text-center text-xs text-slate-500 dark:text-neutral-600 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <span>&copy; 2026 Faizan. Engineering robust systems.</span>
+        <div class="flex gap-4 font-mono">
+            <a href="https://github.com/faizanlinuxx" target="_blank" class="hover:text-emerald-400 transition">GitHub</a>
+            <a href="https://linkedin.com/in/faizanlinuxx" target="_blank" class="hover:text-emerald-400 transition">LinkedIn</a>
+            <a href="mailto:faizanlinuxx@gmail.com" class="hover:text-emerald-400 transition">Email</a>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</body>
+</html>
